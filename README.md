@@ -169,7 +169,7 @@ The interface for command-line usage is fairly simplistic at this stage, as seen
 
   Input: File(s) or glob(s).
 
-      If an input argument is wrapped in quotation marks, it will be passed to "fast-glob"
+      If an input argument is wrapped in quotation marks, it will be passed to node-glob
       for cross-platform glob support.
 
   Options:
@@ -209,21 +209,21 @@ The interface for command-line usage is fairly simplistic at this stage, as seen
 
       -t, --template
 
-          Type of template ('css', 'scss') or path to custom template.
+          Type of styles ('css', 'scss') or path to custom template.
 
-      -s, --dest-template
+      -s, --dest-styles
 
-          Destination for generated template. If not passed used `dest` argument value.
+          Destination for generated styles. If not passed used `dest` argument.
 
-      -c, --template-class-name  
+      -c, --css-template-class-name
 
           Class name in css template.
 
-      -p, --template-font-path
+      -p, --css-template-font-path
 
           Font path in css template.
 
-      -n, --template-font-name
+      -n, --css-template-font-name
 
           Font name in css template.
 
